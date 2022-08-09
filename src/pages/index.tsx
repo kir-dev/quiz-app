@@ -70,7 +70,12 @@ const QuizPage = () => {
             Kir-Dev GTB 4. nap kvíz - 2022
           </Heading>
           <Box my={5}>
-            <Button variant="outline" colorScheme="orange" leftIcon={<Icon as={FaChevronLeft} />}>
+            <Button
+              variant="outline"
+              colorScheme="orange"
+              leftIcon={<Icon as={FaChevronLeft} />}
+              onClick={() => (window.location.href = 'https://kir-dev.sch.bme.hu')}
+            >
               Vissza a honlapra
             </Button>
           </Box>
