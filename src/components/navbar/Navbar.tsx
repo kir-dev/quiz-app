@@ -1,8 +1,7 @@
 import { Box, Flex, Icon, IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
-import { Link } from 'gatsby'
+import { KirdevNamed } from 'components/themed-svgs/KirdevNamed'
 import { FaMoon } from 'react-icons/fa'
 import { HiOutlineSun } from 'react-icons/hi'
-import { KirdevNamed } from '~components/themed-svgs/KirdevNamed'
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
@@ -21,8 +20,7 @@ export const Navbar = () => {
         <Flex flex={{ base: 1, md: '1' }} ml={{ base: -2, md: 0 }} display={{ base: 'flex', md: 'none' }}></Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Box
-            as={Link}
-            to="/"
+            onClick={() => window.location.reload()}
             display="block"
             rounded="md"
             _hover={{

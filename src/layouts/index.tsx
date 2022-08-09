@@ -1,17 +1,12 @@
 import { Box, Flex } from '@chakra-ui/react'
+import { Footer } from 'components/footer/Footer'
+import { Navbar } from 'components/navbar/Navbar'
+import { HasChildren } from 'utils/HasChildren'
 
-import { Footer } from '~components/footer/Footer'
-import { Navbar } from '~components/navbar/Navbar'
-import { HasChildren } from '~utils/HasChildren'
-
-type Props = {
-  background?: string
-} & HasChildren
-
-export const IndexLayout = ({ background, children }: Props) => (
+export const IndexLayout = ({ children }: HasChildren) => (
   <Flex direction="column" minHeight="100vh">
     <Navbar />
-    <Box background={background} flex={1} pb={20}>
+    <Box flex={1} pb={20}>
       {children}
     </Box>
     <Footer />

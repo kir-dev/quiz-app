@@ -7,19 +7,20 @@ import {
   FormLabel,
   Heading,
   HStack,
+  Icon,
   Link,
   Radio,
   RadioGroup,
   Text,
-  useBreakpointValue,
   VStack
 } from '@chakra-ui/react'
+import { Container } from 'components/Container'
+import { CodeHighlighter } from 'components/quiz-components/CodeHighlighter'
 import { useState } from 'react'
 import Confetti from 'react-confetti'
+import { FaChevronLeft } from 'react-icons/fa'
 import { useWindowSize } from 'react-use'
-import { Container } from '~components/Container'
-import { CodeHighlighter } from '~components/quiz-components/CodeHighlighter'
-import { AnswerType, POSSIBLE_ANSWERS, QUIZ_QUESTIONS } from '~utils/quizQuestions'
+import { AnswerType, POSSIBLE_ANSWERS, QUIZ_QUESTIONS } from 'utils/quizQuestions'
 import { IndexLayout } from '../layouts'
 import { environment } from '../utils/configurations'
 
@@ -63,18 +64,13 @@ const QuizPage = () => {
       <div style={{ position: 'fixed', zIndex: 1000 }}>
         <Confetti width={width} height={height} recycle={doRecycle} run={showResult} />
       </div>
-      <IndexLayout
-        background={`${useBreakpointValue({
-          base: '',
-          sm: 'url(/background/top-left.svg) left top no-repeat, '
-        })}url(/background/top-right.svg) right top no-repeat`}
-      >
+      <IndexLayout>
         <Container>
           <Heading textAlign="center" fontSize="5xl">
             Kir-Dev GTB 4. nap kvíz - 2022
           </Heading>
           <Box my={5}>
-            <Button variant="outline" colorScheme="orange">
+            <Button variant="outline" colorScheme="orange" leftIcon={<Icon as={FaChevronLeft} />}>
               Vissza a honlapra
             </Button>
           </Box>

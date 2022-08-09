@@ -4,6 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
+# Optional yarn cache directory
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
 
 # testing
 /coverage

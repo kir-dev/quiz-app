@@ -1,5 +1,5 @@
 import { Flex } from '@chakra-ui/react'
-import { HasChildren } from '~utils/HasChildren'
+import { HasChildren } from 'utils/HasChildren'
 
 type Props = {} & HasChildren
 

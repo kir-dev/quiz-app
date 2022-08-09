@@ -1,9 +1,9 @@
 import { Box, Container, Flex, HStack, Icon, Image, Link, Text } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/system'
+import { KirdevOriginal } from 'components/themed-svgs/KirdevOriginal'
 import { FaAt } from 'react-icons/fa'
-import { KirdevOriginal } from '~components/themed-svgs/KirdevOriginal'
-import { getSocials } from '~utils/commonFunctions'
-import { environment } from '~utils/configurations'
+import { getSocials } from 'utils/commonFunctions'
+import { environment } from 'utils/configurations'
 import { SocialButton } from './SocialButton'
 
 export const Footer = () => (

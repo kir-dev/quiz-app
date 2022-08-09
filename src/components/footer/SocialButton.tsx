@@ -1,6 +1,6 @@
 import { Button, Link } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/system'
-import { HasChildren } from '~utils/HasChildren'
+import { HasChildren } from 'utils/HasChildren'
 
 type Props = {
   label: string
